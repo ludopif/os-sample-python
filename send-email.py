@@ -13,7 +13,7 @@ This is a test e-mail message.
 """
 
 try:
-   smtpObj = smtplib.SMTP('localhost')
+   smtpObj = smtplib.SMTP('proxy-smtp-gin.internal.fr', 25)
    smtpObj.sendmail(sender, receivers, message)         
    print "Successfully sent email"
 except SMTPException:
